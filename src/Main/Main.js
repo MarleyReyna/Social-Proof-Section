@@ -24,7 +24,7 @@ const Main = () => {
     let starsMult = []
 
     for (let i = 0; i < 5; i++){
-        starsMult.push(<img src={starIcon} alt=''/>)
+        starsMult.push(<img src={starIcon} alt='' aria-hidden='true'/>)
     }
 
     return (
@@ -66,7 +66,7 @@ const Main = () => {
                             <li className={item.class}
                             key='index'>
                                 <div>
-                                    <img src={item.image} alt=''/>
+                                    <img src={item.image} alt='' aria-hidden='true'/>
                                     <h2>
                                         {item.name}
                                         <span> <br />Verified Buyer</span>
