@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./BackImages/bg-pattern-top-desktop.svg"),
+    url("./BackImages/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  padding: 0 2rem;
+  font-family: "Spartan", sans-serif;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 900px) {
+  .App {
+    background-image: url("./BackImages/bg-pattern-top-mobile.svg"),
+      url("./BackImages/bg-pattern-bottom-mobile.svg");
+    background-color: white;
+  }
+}
